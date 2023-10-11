@@ -2,6 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 
+a{
+  text-decoration: none;
+  color: white;
+}
+
 .main-wrapper {
   min-height: 100vh;
 }
@@ -107,6 +112,10 @@ button:not(:disabled) {
 
  /* `sm` small devices (portrait phones, less than 576px) */
 @media (max-width: 578px) { 
+
+  button.navbar-toggler.collapsed {
+    padding: 0px;
+}
   
  }
 
