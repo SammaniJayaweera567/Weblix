@@ -1,0 +1,119 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.main-wrapper {
+  min-height: 100vh;
+}
+
+footer {
+  min-height: 200px;
+}
+
+.wrapper {
+  min-height: calc(100vh - 200px);
+}
+
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer;
+  border: none;
+  box-shadow: none;
+}
+
+.text1 {
+  color: #FFFFFF;
+  ;
+}
+
+.bg1 {
+  background: #EC1A1B;
+}
+
+.text2 {
+  color: #7D7D7D;
+}
+
+.bg2 {
+  background: #000000;
+}
+
+.text3 {
+  color: #333333;
+}
+
+
+.font1 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.font2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Custom css strat */
+.container-fluid.main-topbar {
+  padding: 0px;
+  margin: 0px;
+}
+
+.container-fluid.bottom-navbar {
+  padding: 0px;
+  margin: 0px;
+}
+
+.main-topbar a.navbar-brand.text-white.font1.fw-400 {
+  font-size: 40px;
+}
+/* Custom css end */
+
+
+
+
+
+/* responssive css start */
+
+
+ /* `xxl` extra-large devices (large desktops, less than 1400px) */
+@media (max-width: 1400px) { 
+  
+ }
+
+ /* `xl` extra-large devices (desktops, less than 1200px) */
+@media (max-width: 1200px) { 
+  
+ }
+
+ /* `lg` large devices (tablets, less than 992px) */
+@media (max-width: 992px) { 
+  
+ }
+
+ /* `md` medium  devices (landscape phones, less than 768px) */
+@media (max-width: 768px) { 
+  
+ }
+
+ /* `sm` small devices (portrait phones, less than 576px) */
+@media (max-width: 578px) { 
+  
+ }
+
+ /* `xs` extra-small devices (phones, less than 320px) */
+@media (max-width: 320px) { 
+  
+ }
+
+
+/* responssive css end */
