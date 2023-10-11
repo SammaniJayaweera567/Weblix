@@ -190,21 +190,20 @@ p.description-step.bg3 {
   min-height: 270px;
 }
 
-
-.col-lg-8.col-md-8.col-sm-12.steps-list {
-  padding: 0px;
-}
-
 .filterDiv {
   display: none;
 }
 
+.hide{
+  display: none;
+}
 .show {
   display: block;
 }
 
 .container {
   margin-top: 20px;
+  overflow: hidden;
 }
 
 

@@ -326,56 +326,69 @@
           <div class="container filter-steps" id="myBtnContainer">
             <div class="row syeps-block">
               <div class="col-lg-4 col-md-4 col-sm-12 steps-list d-block bg3">
-                <button class="btn" onclick="filterSelection('all')">
+                <button
+                  class="btn btncl-all d-none"
+                  onclick="filterSelection('all')"
+                >
                   Show All
                 </button>
-                <button class="btn" onclick="filterSelection('cars')">
-                  Cars
+                <button class="btn" onclick="filterSelection('step1')">
+                  Step 1
                 </button>
-                <button class="btn" onclick="filterSelection('animals')">
-                  Animals
+                <button class="btn" onclick="filterSelection('step2')">
+                  Step 2
                 </button>
-                <button class="btn" onclick="filterSelection('fruits')">
-                  Fruits
+                <button class="btn" onclick="filterSelection('step3')">
+                  Step 3
                 </button>
-                <button class="btn" onclick="filterSelection('colors')">
-                  Colors
+                <button class="btn" onclick="filterSelection('step4')">
+                  Step 4
+                </button>
+                <button class="btn" onclick="filterSelection('step5')">
+                  Step 5
                 </button>
               </div>
 
               <div class="col-lg-8 col-md-8 col-sm-12 steps-list">
-                <div class="filterDiv all">
+                <div class="filterDiv all hide">
                   <h5 class="text-center bg3 fw-600 l-hight font2">Step 1</h5>
                   <p class="description-step bg3 fw-600 l-hight font2 m-0">
                     dfsree
                   </p>
                 </div>
 
-                <div class="filterDiv cars">
+                <div class="filterDiv step1">
                   <h5 class="text-center bg3 fw-600 l-hight font2">Step 1</h5>
                   <p class="description-step bg3 fw-600 l-hight font2 m-0">
                     ghfhgfhhhhhhhhh
                   </p>
                 </div>
 
-                <div class="filterDiv animals">
-                  <h5 class="text-center bg3 fw-600 l-hight font2">Step 1</h5>
+                <div class="filterDiv step2 hide">
+                  <h5 class="text-center bg3 fw-600 l-hight font2">Step 2</h5>
                   <p class="description-step bg3 fw-600 l-hight font2 m-0">
-                   ghgfhggjew
+                    ghgfhggjew
                   </p>
                 </div>
 
-                <div class="filterDiv fruits">
-                  <h5 class="text-center bg3 fw-600 l-hight font2">Step 1</h5>
+                <div class="filterDiv step3 hide">
+                  <h5 class="text-center bg3 fw-600 l-hight font2">Step 3</h5>
                   <p class="description-step bg3 fw-600 l-hight font2 m-0">
-                  klhgfgyt
+                    klhgfgyt
                   </p>
                 </div>
 
-                <div class="filterDiv colors">
-                  <h5 class="text-center bg3 fw-600 l-hight font2">Step 1</h5>
+                <div class="filterDiv step4 hide">
+                  <h5 class="text-center bg3 fw-600 l-hight font2">Step 4</h5>
                   <p class="description-step bg3 fw-600 l-hight font2 m-0">
-                 QWqedfdgfgg
+                    QWqedfdgfgg
+                  </p>
+                </div>
+
+                <div class="filterDiv step5 hide">
+                  <h5 class="text-center bg3 fw-600 l-hight font2">Step 5</h5>
+                  <p class="description-step bg3 fw-600 l-hight font2 m-0">
+                    QWqedfdgfgg
                   </p>
                 </div>
               </div>
@@ -422,49 +435,51 @@
     <!-- main js -->
 
     <script>
-      filterSelection("all")
+      filterSelection("all");
       function filterSelection(c) {
         var x, i;
         x = document.getElementsByClassName("filterDiv");
         if (c == "all") c = "";
-        for (i = 0; i < x.length; i++) {
+        for (i = 1; i < x.length; i++) {
           w3RemoveClass(x[i], "show");
           if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
         }
       }
-      
+
       function w3AddClass(element, name) {
         var i, arr1, arr2;
         arr1 = element.className.split(" ");
         arr2 = name.split(" ");
         for (i = 0; i < arr2.length; i++) {
-          if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
         }
       }
-      
+
       function w3RemoveClass(element, name) {
         var i, arr1, arr2;
         arr1 = element.className.split(" ");
         arr2 = name.split(" ");
         for (i = 0; i < arr2.length; i++) {
           while (arr1.indexOf(arr2[i]) > -1) {
-            arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
           }
         }
         element.className = arr1.join(" ");
       }
-      
+
       // Add active class to the current button (highlight it)
       var btnContainer = document.getElementById("myBtnContainer");
       var btns = btnContainer.getElementsByClassName("btn");
       for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function(){
+        btns[i].addEventListener("click", function () {
           var current = document.getElementsByClassName("active");
           current[0].className = current[0].className.replace(" active", "");
           this.className += " active";
         });
       }
-      </script>
+    </script>
 
     <script src="inc/js/script.js"></script>
 
