@@ -126,6 +126,10 @@ button:not(:disabled) {
   background: #ec1a1b;
 }
 
+img.hero-image {
+  width: 610px;
+}
+
 .card-box h2.card-title.text3 {
     font-size: 32px;
     font-weight: 700;
@@ -277,6 +281,9 @@ button:not(:disabled) {
 
 /* `md` medium  devices (landscape phones, less than 768px) */
 @media (max-width: 768px) {
+  img.hero-image {
+    width: 370px;
+}
 }
 
 /* `sm` small devices (portrait phones, less than 576px) */
