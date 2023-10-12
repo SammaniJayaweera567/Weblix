@@ -112,6 +112,10 @@ button:not(:disabled) {
   line-height: 1.25;
 }
 
+.bo-radius{
+  border-radius: 8px;
+}
+
 /* Show dropdown menu on hover */
 .dropdown:hover .dropdown-menu {
   display: block;
@@ -144,6 +148,10 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
   color: #ffff;
 }
 
+span.fa.fa-bars {
+  display: none;
+}
+
 .main-wrapper.bg5 {
   background-image: linear-gradient(
     180deg,
@@ -170,6 +178,10 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 .search input.form-control {
   border-radius: 8px;
   box-shadow: #3333 0 5px 16px;
+}
+
+.search input::placeholder{
+  color: #ccc;
 }
 
 .search button {
@@ -343,17 +355,97 @@ img.hero-image {
 
 /* `lg` large devices (tablets, less than 992px) */
 @media (max-width: 992px) {
+  a.signin-icon.d-block.d-lg-none {
+    padding-right: 15px;
+}
+
+.top-bar-right a.signin-icon.d-block.d-lg-none {
+  padding-right: 15px;
+}
+
+.hero-section .left-text-box h1.fw-700.l-hight2.f-size {
+  font-size: 30px !important;
+}
+
+.search button {
+  font-size: 15px !important;
+  height: 48px;
+  width: 111px !important;
+}
+
+.card-box .card {
+  margin-top: 70px;
+}
 }
 
 /* `md` medium  devices (landscape phones, less than 768px) */
 @media (max-width: 768px) {
+  .top-bar-right a.signin-icon.d-block.d-lg-none {
+    padding-right: 15px;
+}
+
+.search button {
+  font-size: 15px !important;
+  height: 48px;
+  width: 111px !important;
+}
+
+.hero-section .left-text-box h1.fw-700.l-hight2.f-size {
+  font-size: 30px !important;
+}
+
+.card-box .card {
+  margin-top: 70px;
+}
 }
 
 /* `sm` small devices (portrait phones, less than 576px) */
 @media (max-width: 578px) {
-  button.navbar-toggler.collapsed {
+  .top-bar-right button.navbar-toggler.collapsed {
     padding: 0px;
   }
+
+  .hero-section .left-text-box h1.fw-700.l-hight2.f-size {
+    font-size: 25px !important;
+}
+
+.search button {
+  font-size: 15px !important;
+  height: 48px;
+  width: 111px !important;
+}
+
+.hero-section .right-text-box {
+  margin-top: 50px;
+}
+
+.card-box .card {
+  margin-top: 80px;
+}
+
+.container.step-box {
+  margin-top: 50px;
+}
+
+.step-box .content {
+  display: inline-block;
+}
+
+.step-box .content .list {
+  width: 100%;
+}
+
+.step-box .content .text-content {
+  margin-top: 50px;
+}
+
+.main-topbar a.text-white.px-lg-3.d-md-none.d-sm-none.d-lg-block {
+  padding: 0px 20px;
+}
+
+.main-topbar .top-bar-right a.text-white.px-lg-3.d-lg-block {
+  padding: 0px 20px;
+}
 }
 
 /* `xs` extra-small devices (phones, less than 320px) */
