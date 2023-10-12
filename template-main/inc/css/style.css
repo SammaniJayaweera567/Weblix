@@ -153,57 +153,109 @@ button:not(:disabled) {
   width: 64px;
 }
 
-.filter-steps .steps-list button.btn {
-  background: red;
-  margin: 10px 0px;
-  width: 332px;
-  font-weight: bold;
-  text-align: left;
+
+
+::selection{
+  background: #ec1a1b;
+  color: #fff;
 }
 
-.row.syeps-block {
-  margin: 0px;
+.container .topic{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
-
-.col-lg-4.col-md-4.col-sm-12.steps-list.d-block.bg3 {
-  padding: 20px;
+.content{
+  display: flex;
+  justify-content: space-between;
 }
-
-.filterDiv.step1 {
-  margin: 0px 0px 0px 50px;
+.content .list{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-right: 50px;
+  position: relative;
 }
-
-h5.text-center {
-  padding: 10px 20px;
-  border-radius: 5px;
+.content .list label {
+  height: 60px;
   font-size: 16px;
-}
-
-h5.text-center {
-  padding: 10px 20px;
+  font-weight: 600;
+  line-height: 60px;
+  cursor: pointer;
+  padding-left: 25px;
+  transition: all 0.5s ease;
+  color: #333;
+  z-index: 12;
+  margin: 10px;
   border-radius: 5px;
 }
-
-p.description-step.bg3 {
-  padding: 20px;
-  margin-top: 30px;
-  min-height: 270px;
+#step1:checked ~ .list label.home,
+#step2:checked ~ .list label.blog,
+#step3:checked ~ .list label.help,
+#step4:checked ~ .list label.code,
+#step5:checked ~ .list label.about{
+  color: #fff;
 }
 
-.filterDiv {
+.content .slider{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  border-radius: 12px;
+  /* background: #ec1a1b; */
+  transition: all 0.4s ease;
+}
+#step1:checked ~ .list .slider{
+  top: 0;
+}
+#step2:checked ~ .list .slider{
+  top: 60px;
+}
+#step3:checked ~ .list .slider{
+  top: 120px;
+}
+#step4:checked ~ .list .slider{
+  top: 180px;
+}
+#step5:checked ~ .list .slider{
+  top: 240px;
+}
+.content .text-content{
+  width: 100%;
+  height: 100%;
+}
+.content .text{
   display: none;
 }
-
-.hide{
-  display: none;
+.content .text .title{
+  font-size: 16px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  padding: 10px 0px;
 }
-.show {
+.content .text p{
+  text-align: justify;
+}
+.content .text-content .step1{
   display: block;
 }
-
-.container {
-  margin-top: 20px;
-  overflow: hidden;
+#step1:checked ~ .text-content .step1,
+#step2:checked ~ .text-content .step2,
+#step3:checked ~ .text-content .step3,
+#step4:checked ~ .text-content .step4,
+#step5:checked ~ .text-content .step5{
+  display: block;
+}
+#step2:checked ~ .text-content .step1,
+#step3:checked ~ .text-content .step1,
+#step4:checked ~ .text-content .step1,
+#step5:checked ~ .text-content .step1{
+  display: none;
+}
+.content input{
+  display: none;
 }
 
 
