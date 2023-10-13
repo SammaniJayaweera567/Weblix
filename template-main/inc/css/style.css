@@ -713,10 +713,16 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 
 .col-md-12.search-box {
   padding-left: 0px;
+  padding-right: 0px;
 }
 
 .hero-section .search-box .search {
   margin: 12px;
+}
+
+.content .list {
+  width: 100%;
+  margin-right: 0 !important;
 }
 }
 
