@@ -50,8 +50,10 @@
         <header>
           <!-- topbar start -->
           <div class="container-fluid main-topbar">
-            <nav class="navbar navbar-expand-lg navbar-light bg1 text-white px-lg-4">
-              <div class="container-fluid">
+            <nav
+              class="navbar navbar-expand-lg navbar-light bg1 text-white px-lg-4"
+            >
+              <div class="container">
                 <button
                   class="navbar-toggler"
                   type="button"
@@ -72,7 +74,10 @@
                     ><i class="fa-solid fa-cart-shopping px-md-3 px-sm-3"></i
                   ></a>
 
-                  <a class="text-white d-none d-lg-block fw-600 f-size2 l-hight font2">Sign In</a>
+                  <a
+                    class="text-white d-none d-lg-block fw-600 f-size2 l-hight font2"
+                    >Sign In</a
+                  >
 
                   <a class="signin-icon d-block d-lg-none"
                     ><i class="fa-solid fa-user"></i
@@ -84,65 +89,127 @@
           <!-- topbar end -->
 
           <!-- nav bar start -->
-          <div class="container-fluid bottom-navbar bg4">
+          <div class="container-fluid navbar-light bottom-navbar bg4">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
-              <div class="navbar-main-left">
-                <!-- <a class="navbar-brand" href="#"
-                    ><img src="https://picsum.photos/300/100" alt="logo"
-                  /></a> -->
-                <button
-                  onclick="toggleBtn()"
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="fa fa-bars" onclick="changeIcon(this)"></span>
-                </button>
-                <div
-                  class="collapse navbar-collapse float-lg-end float-md-none"
-                  id="navbarSupportedContent"
-                >
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item pe-3">
-                      <a
-                        class="nav-link active text1 l-hight f-size2 font2 fw-400"
-                        aria-current="page"
-                        href="home.html"
-                        >List Your Business</a
-                      >
-                    </li>
-                    <li class="nav-item pe-3">
-                      <a class="nav-link text2 l-hight f-size2 font2 fw-400" href="about-us.html"
-                        >Business Reviews</a
-                      >
-                    </li>
-                    <li class="nav-item pe-3">
-                      <a class="nav-link text2 l-hight f-size2 font2 fw-400" href="blog.html">Guides</a>
-                    </li>
-                    <li class="nav-item pe-3">
-                      <a class="nav-link text2 l-hight f-size2 font2 fw-400" href="contat-us.html"
-                        >Contact Us</a
-                      >
-                    </li>
-                  </ul>
-                  <!-- <form class="d-flex" role="search">
-                      <input
-                        class="form-control me-2"
-                        type="search"
-                        placeholder="Search"
-                        aria-label="Search"
-                      />
-                      <button class="btn btn-outline-success" type="submit">
-                        Search
-                      </button>
-                    </form> -->
+              <div class="container">
+                <div class="navbar-main-left">
+                  <!-- <a class="navbar-brand" href="#"
+                      ><img src="https://picsum.photos/300/100" alt="logo"
+                    /></a> -->
+
+                  <div
+                    class="collapse navbar-collapse float-lg-end float-md-none"
+                    id="navbarSupportedContent"
+                  >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item pe-4">
+                        <a
+                          class="nav-link active text1 l-hight f-size2 font2 fw-400 ps-0"
+                          aria-current="page"
+                          href="home.html"
+                          >List Your Business</a
+                        >
+                      </li>
+                      <li class="nav-item pe-4">
+                        <a
+                          class="nav-link text2 l-hight f-size2 font2 fw-400 ps-0"
+                          href="about-us.html"
+                          >Business Reviews</a
+                        >
+                      </li>
+                      <li class="nav-item pe-4">
+                        <a
+                          class="nav-link text2 l-hight f-size2 font2 fw-400 ps-0"
+                          href="blog.html"
+                          >Guides</a
+                        >
+                      </li>
+                      <li class="nav-item pe-4">
+                        <a
+                          class="nav-link text2 l-hight f-size2 font2 fw-400 ps-0"
+                          href="contat-us.html"
+                          >Contact Us</a
+                        >
+                      </li>
+                    </ul>
+                    <!-- <form class="d-flex" role="search">
+                        <input
+                          class="form-control me-2"
+                          type="search"
+                          placeholder="Search"
+                          aria-label="Search"
+                        />
+                        <button class="btn btn-outline-success" type="submit">
+                          Search
+                        </button>
+                      </form> -->
+                  </div>
                 </div>
               </div>
             </nav>
+          </div>
+
+          <!-- Button trigger modal -->
+         
+          <div class="mobile-toggler d-lg-none">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#navbModal">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
+     
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="navbModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text4" id="exampleModalLabel">
+                    WEBLIX
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="modal-body">
+                  <div class="modal-line text2">
+                    <i class="fa-solid fa-clipboard-list"></i><a href="#" class="text1">List Your Business</a>
+                  </div>
+
+                  <div class="modal-line text2">
+                    <i class="fas fa-users"></i><a href="#" class="text2">Business Reviews</a>
+                  </div>
+
+                  <div class="modal-line text2">
+                    <i class="fas fa-clone"></i><a href="#" class="text2">Guides</a>
+                  </div>
+
+                  <div class="modal-line text2">
+                    <i class="fas fa-mobile-alt"></i><a href="#" class="text2">Contact Us</a>
+                  </div>
+
+                </div>
+                <!-- <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary" type="button">
+                    Save changes
+                  </button>
+                </div> -->
+              </div>
+            </div>
           </div>
           <!-- nav bar end -->
         </header>
@@ -151,7 +218,9 @@
         <div class="body-wrapper">
           <div class="container hero-section mt-5">
             <div class="row">
-              <div class="col-lg-6 col-md-6 col-sm-12 hero-left pe-lg-5 pe-md-4 pe-sm-0">
+              <div
+                class="col-lg-6 col-md-6 col-sm-12 hero-left pe-lg-5 pe-md-4 pe-sm-0"
+              >
                 <div class="left-text-box mb-5">
                   <h1 class="fw-700 l-hight2 f-size">
                     Professional WordPress Themes & Website Templates for any
@@ -174,7 +243,8 @@
                         />
 
                         <span class="search-btn-op d-inline">
-                          <button class="btn text1 font2"><span><i class="fa fa-search"></i></span>
+                          <button class="btn text1 font2">
+                            <span><i class="fa fa-search"></i></span>
                             Search
                           </button>
                         </span>
@@ -184,9 +254,13 @@
                 </div>
               </div>
 
-              <div class="col-lg-6 col-md-6 col-sm-12 hero-right pe-lg-5 pe-md-4 pe-sm-0">
+              <div class="col-lg-6 col-md-6 col-sm-12 hero-right pe-sm-0">
                 <div class="right-text-box">
-                  <img src="./inc/images/hero-banner-image.png" alt="" class="hero-image img-fluid"/>
+                  <img
+                    src="./inc/images/hero-banner-image.png"
+                    alt=""
+                    class="hero-image img-fluid"
+                  />
                 </div>
               </div>
             </div>
@@ -326,8 +400,7 @@
             </div>
           </div>
 
-          <div class="container step-box mt-md-5 pt-md-5 mt-sm-5 pt-sm-5">
-
+          <div class="container step-box mt-md-5 pt-md-3 mt-sm-5 pt-sm-5">
             <div class="content">
               <input type="radio" name="slider" checked id="step1" />
               <input type="radio" name="slider" id="step2" />
@@ -354,8 +427,8 @@
               </div>
               <div class="text-content mt-sm-5 mt-md-0">
                 <div class="step1 text">
-                  <div class="title text-center bg3">Step 1</div>
-                  <p class="bg3 p-3">
+                  <div class="title text-center bg3">Step 01</div>
+                  <p class="bg3 p-3 font2 fw-600 f-size2 l-hight mb-lg-0">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Quasi excepturi ducimus sequi dignissimos expedita tempore
                     omnis quos cum, possimus, aspernatur esse nihil commodi est
@@ -371,8 +444,8 @@
                   </p>
                 </div>
                 <div class="step2 text">
-                  <div class="title text-center bg3">Step 2</div>
-                  <p class="bg3 p-3">
+                  <div class="title text-center bg3">Step 02</div>
+                  <p class="bg3 p-3 font2 fw-600 f-size2 l-hight">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Alias tempora, unde reprehenderit incidunt excepturi
                     blanditiis ullam dignissimos provident quam? Fugit, enim!
@@ -387,8 +460,8 @@
                   </p>
                 </div>
                 <div class="step3 text">
-                  <div class="title text-center bg3">Step 3</div>
-                  <p class="bg3 p-3">
+                  <div class="title text-center bg3">Step 03</div>
+                  <p class="bg3 p-3 font2 fw-600 f-size2 l-hight">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Maiores error neque, officia excepturi dolores quis dolor,
                     architecto iusto deleniti a soluta nostrum. Fuga reiciendis
@@ -404,8 +477,8 @@
                   </p>
                 </div>
                 <div class="step4 text">
-                  <div class="title text-center bg3">Step 5</div>
-                  <p class="bg3 p-3">
+                  <div class="title text-center bg3">Step 04</div>
+                  <p class="bg3 p-3 font2 fw-600 f-size2 l-hight">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Tempore magnam vitae inventore blanditiis nam tenetur
                     voluptates doloribus error atque reprehenderit,
@@ -419,8 +492,8 @@
                   </p>
                 </div>
                 <div class="step5 text">
-                  <div class="title text-center bg3">Step 6</div>
-                  <p class="bg3 p-3">
+                  <div class="title text-center bg3">Step 05</div>
+                  <p class="bg3 p-3 font2 fw-600 f-size2 l-hight">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Necessitatibus incidunt possimus quas ad, sit nam veniam
                     illo ullam sapiente, aspernatur fugiat atque. Laboriosam

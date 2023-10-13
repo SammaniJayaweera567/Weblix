@@ -52,6 +52,9 @@ button:not(:disabled) {
   color: #333333;
 }
 
+.text4{
+  color: #ec1a1b;
+}
 .bg1 {
   background: #ec1a1b;
 }
@@ -148,6 +151,14 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
   color: #ffff;
 }
 
+.bottom-navbar .nav-link.active {
+  color: #ffff !important;
+}
+
+.bottom-navbar .nav-link {
+  color: #7d7d7d!important;
+}
+
 span.fa.fa-bars {
   display: none;
 }
@@ -238,6 +249,25 @@ img.hero-image {
   width: 64px;
 }
 
+.card-link {
+  text-decoration: none;
+  position: relative;
+  color: #000; /* Set your desired link color */
+  transform: translateY(10);
+  transition: 0.5s;
+}
+
+.card-link:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px; /* Set the underline height as per your design */
+  background-color: #007bff; /* Set your desired underline color */
+  bottom: -3px;
+  left: 0;
+  transform: translateY(0)
+}
+
 ::selection {
   background: #ec1a1b;
   color: #fff;
@@ -272,6 +302,12 @@ img.hero-image {
   margin: 10px;
   border-radius: 5px;
 }
+
+.content .text p {
+  text-align: justify;
+  min-height: 326px;
+}
+
 #step1:checked ~ .list label.home,
 #step2:checked ~ .list label.blog,
 #step3:checked ~ .list label.help,
@@ -341,6 +377,106 @@ img.hero-image {
   display: none;
 }
 
+/*navbar-modal*/
+
+.modal-dialog {
+  margin: 0;
+  width: 280px;
+}
+
+.modal-content{
+  border-radius: 0;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: #252724;
+}
+
+.modal-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 16px;
+  width: 88%;
+  border-bottom: 2px solid #ffff;
+}
+
+.modal-header .btn-closer{
+  opacity: 1;
+  background: transparent;
+}
+
+.modal-header i{
+  color: #7d7d7d;
+  font-size: 30px;
+}
+
+.modal-body{
+  width: 80%;
+  margin: 0 auto;
+  padding: 35px 0 0 0;
+  flex: unset;
+}
+
+.modal-body .modal-line {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 7px 0;
+  cursor: pointer;
+  transition: all .5e ease;
+  border-bottom: 1px solid #ec1a1b;
+}
+
+.modal-body .modal-line a {
+  margin-left: 15px;
+}
+
+.modal-body .modal-line:hover{
+  color: #7d7d7d;
+  border-bottom: 1px solid #ffff;
+}
+
+.modal-line a{
+  font-size: 16px;
+  font-weight: 500px;
+  letter-spacing: 1px;
+  color: #7d7d7d;
+  font-family: "Poppins", sans-serif;
+}
+
+.modal-line i{
+  color: currentColor;
+  font-size: 30px;
+  width: 35px;
+  margin-right: 15px;
+  padding: 0 0 3px 3px;
+}
+
+.modal-line a:hover,
+.modal-line i:hover{
+  color: #ffff;
+  font-weight: 600px;
+}
+
+.navb-button{
+  width: 100%;
+  height: 47px;
+  background-color: #ec1a1b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700px;
+  color: #252724;
+  transition: all .5e ease;
+}
+
+.navb-button:hover{
+  background-color: #252724;
+  column-rule: #ec1a1b;
+}
 /* Custom css end */
 
 /* responssive css start */
@@ -355,12 +491,8 @@ img.hero-image {
 
 /* `lg` large devices (tablets, less than 992px) */
 @media (max-width: 992px) {
-  a.signin-icon.d-block.d-lg-none {
-    padding-right: 15px;
-}
-
-.top-bar-right a.signin-icon.d-block.d-lg-none {
-  padding-right: 15px;
+  .main-topbar .container {
+    padding: 0px;
 }
 
 .hero-section .left-text-box h1.fw-700.l-hight2.f-size {
@@ -380,8 +512,8 @@ img.hero-image {
 
 /* `md` medium  devices (landscape phones, less than 768px) */
 @media (max-width: 768px) {
-  .top-bar-right a.signin-icon.d-block.d-lg-none {
-    padding-right: 15px;
+  .main-topbar .container {
+    padding: 0px;
 }
 
 .search button {
@@ -401,9 +533,9 @@ img.hero-image {
 
 /* `sm` small devices (portrait phones, less than 576px) */
 @media (max-width: 578px) {
-  .top-bar-right button.navbar-toggler.collapsed {
+  /* .top-bar-right button.navbar-toggler.collapsed {
     padding: 0px;
-  }
+  } */
 
   .hero-section .left-text-box h1.fw-700.l-hight2.f-size {
     font-size: 25px !important;
@@ -445,6 +577,18 @@ img.hero-image {
 
 .main-topbar .top-bar-right a.text-white.px-lg-3.d-lg-block {
   padding: 0px 20px;
+}
+
+nav.navbar.navbar-expand-lg.bg-body-tertiary {
+  padding: 10px 15px;
+}
+
+.navbar-brand {
+  margin-right: 0rem;
+}
+
+.main-topbar .container {
+  padding: 10px;
 }
 }
 
