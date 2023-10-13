@@ -36,6 +36,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;1,100&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Blinker:wght@300;400;600;700;800;900&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;1,100&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- main css -->
     <link rel="stylesheet" href="inc/css/style.css" />
@@ -51,10 +55,10 @@
           <!-- topbar start -->
           <div class="container-fluid main-topbar">
             <nav
-              class="navbar navbar-expand-lg navbar-light bg1 text-white px-lg-4"
+              class="navbar navbar-expand-lg navbar-light bg1 text-white px-lg-3"
             >
-              <div class="container">
-                <button
+              <div class="container max-w">
+                <!-- <button
                   class="navbar-toggler"
                   type="button"
                   data-bs-toggle="collapse"
@@ -64,18 +68,32 @@
                   aria-label="Toggle navigation"
                 >
                   <span class="navbar-toggler-icon"></span>
-                </button>
+                </button> -->
+
+                <!-- Button trigger modal -->
+
+                <div class="mobile-toggler d-lg-none">
+                  <a
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#navbModal"
+                  >
+                    <i class="fa-solid fa-bars"></i>
+                  </a>
+                </div>
                 <a class="navbar-brand text-white font1 fw-400" href="#"
                   >WEBLIX</a
                 >
 
                 <span class="top-bar-right d-flex">
-                  <a class="text-white px-lg-3 d-lg-block" href="#"
-                    ><i class="fa-solid fa-cart-shopping px-md-3 px-sm-3"></i
+                  <a
+                    class="text-white px-lg-3 d-lg-block"
+                    href="#"><i class="fa-solid fa-cart-shopping px-md-3 px-sm-3"></i
                   ></a>
 
                   <a
-                    class="text-white d-none d-lg-block fw-600 f-size2 l-hight font2"
+                    class="text-white d-none d-lg-block fw-400 f-size2 l-hight font1"
+                    style="opacity: 0.8"
                     >Sign In</a
                   >
 
@@ -91,7 +109,7 @@
           <!-- nav bar start -->
           <div class="container-fluid navbar-light bottom-navbar bg4">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
-              <div class="container">
+              <div class="container max-w">
                 <div class="navbar-main-left">
                   <!-- <a class="navbar-brand" href="#"
                       ><img src="https://picsum.photos/300/100" alt="logo"
@@ -101,10 +119,10 @@
                     class="collapse navbar-collapse float-lg-end float-md-none"
                     id="navbarSupportedContent"
                   >
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 font1">
                       <li class="nav-item pe-4">
                         <a
-                          class="nav-link active text1 l-hight f-size2 font2 fw-400 ps-0"
+                          class="nav-link active l-hight f-size2 font1 fw-400 ps-0"
                           aria-current="page"
                           href="home.html"
                           >List Your Business</a
@@ -112,21 +130,21 @@
                       </li>
                       <li class="nav-item pe-4">
                         <a
-                          class="nav-link text2 l-hight f-size2 font2 fw-400 ps-0"
+                          class="nav-link text2 l-hight f-size2 font1 fw-400 ps-0"
                           href="about-us.html"
                           >Business Reviews</a
                         >
                       </li>
                       <li class="nav-item pe-4">
                         <a
-                          class="nav-link text2 l-hight f-size2 font2 fw-400 ps-0"
+                          class="nav-link text2 l-hight f-size2 font1 fw-400 ps-0"
                           href="blog.html"
                           >Guides</a
                         >
                       </li>
                       <li class="nav-item pe-4">
                         <a
-                          class="nav-link text2 l-hight f-size2 font2 fw-400 ps-0"
+                          class="nav-link text2 l-hight f-size2 font1 fw-400 ps-0"
                           href="contat-us.html"
                           >Contact Us</a
                         >
@@ -147,56 +165,52 @@
                 </div>
               </div>
             </nav>
-          </div>
 
-          <!-- Button trigger modal -->
-         
-          <div class="mobile-toggler d-lg-none">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#navbModal">
-              <i class="fa-solid fa-bars"></i>
-            </a>
-          </div>
-     
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="navbModal"
-            tabindex="-1"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title text4" id="exampleModalLabel">
-                    WEBLIX
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ><i class="fa-solid fa-xmark"></i></button>
-                </div>
-                <div class="modal-body">
-                  <div class="modal-line text2">
-                    <i class="fa-solid fa-clipboard-list"></i><a href="#" class="text1">List Your Business</a>
+            <!-- Modal -->
+            <div class="mobile-navbar-modal">
+              <div
+              class="modal fade"
+              id="navbModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text4" id="exampleModalLabel">
+                      WEBLIX
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    >
+                    </button>
                   </div>
+                  <div class="modal-body">
+                    <div class="modal-line">
+                      <i class="fa-solid fa-clipboard-list"></i
+                      ><a href="#" class="text1 font1">List Your Business</a>
+                    </div>
 
-                  <div class="modal-line text2">
-                    <i class="fas fa-users"></i><a href="#" class="text2">Business Reviews</a>
+                    <div class="modal-line">
+                      <i class="fas fa-users"></i
+                      ><a href="#" class="text2 font1">Business Reviews</a>
+                    </div>
+
+                    <div class="modal-line">
+                      <i class="fas fa-clone"></i
+                      ><a href="#" class="text2 font1">Guides</a>
+                    </div>
+
+                    <div class="modal-line">
+                      <i class="fas fa-mobile-alt"></i
+                      ><a href="#" class="text2 font1">Contact Us</a>
+                    </div>
                   </div>
-
-                  <div class="modal-line text2">
-                    <i class="fas fa-clone"></i><a href="#" class="text2">Guides</a>
-                  </div>
-
-                  <div class="modal-line text2">
-                    <i class="fas fa-mobile-alt"></i><a href="#" class="text2">Contact Us</a>
-                  </div>
-
-                </div>
-                <!-- <div class="modal-footer">
+                  <!-- <div class="modal-footer">
                   <button
                     type="button"
                     class="btn btn-secondary"
@@ -208,21 +222,24 @@
                     Save changes
                   </button>
                 </div> -->
+                </div>
               </div>
             </div>
+            </div>
+
+            <!-- nav bar end -->
           </div>
-          <!-- nav bar end -->
         </header>
         <!-- header end -->
 
         <div class="body-wrapper">
-          <div class="container hero-section mt-5">
+          <div class="container hero-section mt-5 max-w">
             <div class="row">
               <div
-                class="col-lg-6 col-md-6 col-sm-12 hero-left pe-lg-5 pe-md-4 pe-sm-0"
+                class="col-lg-6 col-md-6 col-sm-12 hero-left pe-lg-5 pe-md-4 pe-sm-0 my-auto"
               >
                 <div class="left-text-box mb-5">
-                  <h1 class="fw-700 l-hight2 f-size">
+                  <h1 class="fw-700 l-hight2 f-size text3">
                     Professional WordPress Themes & Website Templates for any
                     project
                   </h1>
@@ -234,7 +251,7 @@
 
                 <div class="search-form">
                   <div class="row height d-flex">
-                    <div class="col-md-12">
+                    <div class="col-md-12 search-box">
                       <div class="search">
                         <input
                           type="text"
@@ -254,7 +271,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-6 col-md-6 col-sm-12 hero-right pe-sm-0">
+              <div class="col-lg-6 col-md-6 col-sm-12 hero-right ps-md-5 pe-sm-0 my-auto pt-4 pt-md-0">
                 <div class="right-text-box">
                   <img
                     src="./inc/images/hero-banner-image.png"
@@ -266,7 +283,7 @@
             </div>
           </div>
 
-          <div class="container mt-lg-5 pt-lg-1 mt-md-2">
+          <div class="container mt-lg-5 pt-lg-1 mt-md-2 max-w">
             <div class="card-box">
               <div class="row my-lg-5">
                 <div class="col-lg-4 col-md-6 col-sm-12">
@@ -400,7 +417,7 @@
             </div>
           </div>
 
-          <div class="container step-box mt-md-5 pt-md-3 mt-sm-5 pt-sm-5">
+          <div class="container step-box mt-md-5 pt-md-5 mt-sm-5 pt-sm-5 max-w">
             <div class="content">
               <input type="radio" name="slider" checked id="step1" />
               <input type="radio" name="slider" id="step2" />
