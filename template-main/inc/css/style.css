@@ -160,7 +160,14 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 }
 
 .bottom-navbar .nav-link {
-  color: #7d7d7d!important;
+  color: #ffff !important;
+  opacity: .4;
+  letter-spacing: 1px;
+}
+
+.bottom-navbar .nav-link:hover{
+  opacity: 1;
+  cursor: pointer;
 }
 
 span.fa.fa-bars {
@@ -644,7 +651,7 @@ img.hero-image {
 }
 
 .card-box .card {
-  margin-top: 80px;
+  margin-top: 70px;
 }
 
 .container.step-box {
