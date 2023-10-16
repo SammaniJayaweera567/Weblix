@@ -49,6 +49,9 @@ button:not(:disabled) {
   font-size: 18px;
 }
 
+.f-size4{
+  font-size: 13px;
+}
 .text1 {
   color: #ffffff;
 }
@@ -153,11 +156,22 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 }
 
 .top-bar-right i.fa-solid.fa-cart-shopping {
-  font-size: 20px;
+  font-size: 13px;
+}
+
+span.top-bar-right.d-flex {
+  background: #d1000085;
+  padding: px px;
+  padding: 13px 17px;
+  border-radius: 5px;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
   color: #ffff;
+}
+
+li.nav-item.pe-4 {
+  padding-right: 32px !important;
 }
 
 .bottom-navbar .nav-link.active {
@@ -186,16 +200,12 @@ span.fa.fa-bars {
   );
 }
 
-.container.hero-section.mt-5.max-w {
-  padding: 0 26px;
-}
-
 .col-lg-6.col-md-6.col-sm-12.hero-left.pe-lg-5.pe-md-4.pe-sm-0 {
   padding-right: 60px!important;
 }
 
 .col-lg-6.col-md-6.col-sm-12.hero-right.ps-md-5.pe-sm-0 {
-  padding-left: 60px !important;
+  padding-left: 100px !important;
 }
 
 .search-btn-op span {
@@ -208,9 +218,15 @@ span.fa.fa-bars {
 }
 
 .search input {
-  height: 74px;
+  height: 71px;
   text-indent: 5px;
   border: none;
+}
+
+.search-btn-op button.btn.text1.font2 {
+  outline: none;
+  border: none;
+  box-shadow: none;
 }
 
 .search input.form-control {
@@ -226,8 +242,8 @@ span.fa.fa-bars {
   position: absolute;
   top: 13px;
   right: 15px;
-  height: 48px;
-  width: 125px;
+  height: 44px;
+  width: 112px;
   background: #ec1a1b;
 }
 
