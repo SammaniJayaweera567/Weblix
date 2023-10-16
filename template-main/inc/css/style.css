@@ -1,3 +1,8 @@
+:root {
+  --font-fallback: BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-sans;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -88,7 +93,7 @@ button:not(:disabled) {
 }
 
 .font1 {
-  font-family: 'Blinker', sans-serif;
+  font-family: "JobClarendon", var(--font-fallback);
 }
 
 .font2 {
@@ -162,7 +167,6 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 .bottom-navbar .nav-link {
   color: #ffff !important;
   opacity: .4;
-  letter-spacing: 1px;
 }
 
 .bottom-navbar .nav-link:hover{
