@@ -607,6 +607,9 @@ a:hover.text-white.pe-lg-4.d-lg-block, a:hover.sign-in-btn.text-white.d-none.d-l
   width: 65%;
 }
 
+.hero-section {
+  padding-top: 32px !important;
+}
 /* Custom css end */
 
 /* responssive css start */
