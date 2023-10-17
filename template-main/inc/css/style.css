@@ -228,7 +228,7 @@ span.fa.fa-bars {
 }
 
 .search input {
-  height: 71px;
+  height: 74px;
   text-indent: 5px;
   border: none;
 }
@@ -250,10 +250,10 @@ span.fa.fa-bars {
 
 .search button {
   position: absolute;
-  top: 13px;
+  top: 15px;
   right: 15px;
-  height: 44px;
-  width: 112px;
+  height: 43px;
+  width: 115px;
   background: #ec1a1b;
 }
 
@@ -608,7 +608,15 @@ a:hover.text-white.pe-lg-4.d-lg-block, a:hover.sign-in-btn.text-white.d-none.d-l
 }
 
 .hero-section {
-  padding-top: 50px !important;
+  padding-top: 45px !important;
+}
+
+.row.hero-widget {
+  padding: 0px 12px;
+}
+
+.hero-left {
+  padding-right: 45px !important;
 }
 /* Custom css end */
 
