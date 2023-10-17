@@ -67,6 +67,11 @@ button:not(:disabled) {
 .text4{
   color: #ec1a1b;
 }
+
+.text5{
+  color: #545454;
+}
+
 .bg1 {
   background: #ec1a1b;
 }
@@ -616,8 +621,12 @@ a:hover.text-white.pe-lg-4.d-lg-block, a:hover.sign-in-btn.text-white.d-none.d-l
   padding: 0px 26px;
 }
 
-.hero-left {
-  padding-right: 45px !important;
+.hero-right {
+  padding-left: 70px;
+}
+
+.card-box {
+  padding: 0px 5px;
 }
 /* Custom css end */
 
@@ -748,6 +757,14 @@ img.hero-image {
 .left-text-box.mb-5 {
   margin-bottom: 32px !important;
 }
+
+.card-box {
+  padding: 0px 0px;
+}
+
+span.top-bar-right.d-flex {
+  margin: 0px 0px !important;
+}
 }
 
 /* `md` medium  devices (landscape phones, less than 768px) */
@@ -859,6 +876,14 @@ img.hero-image {
 .left-text-box.mb-5 {
   margin-bottom: 32px !important;
 }
+
+.card-box {
+  padding: 0px 0px !important;
+}
+
+span.top-bar-right.d-flex {
+  margin: 0px 0px !important;
+}
 }
 
 /* `sm` small devices (portrait phones, less than 576px) */
@@ -911,10 +936,6 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 
 .navbar-brand {
   margin-right: 0rem;
-}
-
-.main-topbar .container {
-  padding: 0px 15px;
 }
 
 .mobile-navbar-modal .modal-dialog {
@@ -1014,12 +1035,24 @@ span.top-bar-right.d-flex {
 }
 
 img.hero-image {
-  max-width: 260px;
+  max-width: 100%;
   margin-top: 0px;
 }
 
 .left-text-box.mb-5 {
   margin-bottom: 20px !important;
+}
+
+span.top-bar-right.d-flex {
+  margin-right: 0px;
+}
+
+.row.hero-widget {
+  padding: 0px 10px;
+}
+
+.card-box {
+  margin-top: 30px;
 }
 
 }
@@ -1064,6 +1097,14 @@ span.top-bar-right.d-flex {
 
 .mobile-search input {
   width: 208px;
+}
+
+.row.hero-widget {
+  padding: 0px 10px;
+}
+
+.card-box {
+  margin-top: 30px;
 }
 
 
