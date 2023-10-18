@@ -470,6 +470,11 @@ img.hero-image {
   width: 280px;
 }
 
+img.mobile-logo.img-fluid {
+  max-width: 120px;
+  padding: 5px 0px;
+}
+
 .mobile-navbar-modal .modal-content{
   border-radius: 0;
   height: 100vh;
@@ -812,9 +817,7 @@ img.logo.img-fluid {
 }
 
 .card-box .card {
-  margin-top: 90px
-px
-;
+  margin-top: 90px;
 }
 
 .mobile-navbar-modal .modal-dialog {
@@ -1083,6 +1086,11 @@ span.top-bar-right.d-flex {
 
 img.logo.img-fluid {
   max-width: 115px;
+}
+
+img.mobile-logo.img-fluid {
+  max-width: 120px;
+  padding: 5px 0px;
 }
 
 }
