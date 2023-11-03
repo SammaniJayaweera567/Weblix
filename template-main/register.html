@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+  <title>document</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="inc/img/home/favicon.png" type="image/x-icon" />
+
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <!-- font-awesome cdn  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- google font cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;1,100&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Blinker:wght@300;400;600;700;800;900&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;1,100&display=swap"
+    rel="stylesheet" />
+
+  <!-- main css -->
+  <link rel="stylesheet" href="inc/css/style.css" />
+</head>
+
+<body>
+  <div class="signup-section m-auto my-4">
+    <div class="container-fluid signup-main px-0">
+      <div class="card m-auto shadow border-0 py-4">
+        <div class="card-body Regular">
+          <div class="card-title signup-main-title-info text-center">
+            <h4 class="signup-main-title font1">SIGN UP TO WEBLIX</h4>
+          </div>
+
+          <form class="signup-form my-5">
+
+            <div class="row g-3 my-3  label">
+              <div class="col-md-3 col-sm-12">
+                <label for="inputTitle" class="col-sm-4 col-form-label fw-600">Title</label>
+              </div>
+              <div class="col-md-9 col-sm-12">
+                <select id="inputTitle" class="form-select field fw-600 select-field-signup" aria-placeholder="Select"
+                  placeholder="Select">
+                  <option selected>Select</option>
+                  <option>Business Category 1</option>
+                  <option>Business Category 2</option>
+                  <option>Business Category 3</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row g-3 my-3 label">
+              <div class="col-md-3">
+                <label for="inputfirstName" class="col-form-label fw-600 f-size4">First Name</label>
+              </div>
+              <div class="col-md-9">
+                <input type="text" id="inputfirstName" class="form-control input-field-signup" aria-describedby="">
+              </div>
+            </div>
+
+            <div class="row g-3 my-3 label">
+              <div class="col-md-3">
+                <label for="inputLastName" class="col-form-label fw-600 f-size4">Last Name</label>
+              </div>
+              <div class="col-md-9 col-sm-12">
+                <input type="text" id="inputLastName" class="form-control input-field-signup" aria-describedby="">
+              </div>
+            </div>
+
+            <div class="row g-3 my-3 label">
+              <div class="col-md-3">
+                <label for="inputEmail2" class="col-form-label fw-600 f-size4">Email</label>
+              </div>
+              <div class="col-md-9">
+                <input type="email" id="inputEmail2" class="form-control input-field-signup" aria-describedby="">
+              </div>
+            </div>
+
+            <div class="row g-3 my-3 label">
+              <div class="col-md-3">
+                <label for="inputMobileNo" class="col-form-label fw-600 f-size4">Mobile No</label>
+              </div>
+              <div class="col-md-9">
+                <input type="number" id="inputMobileNo" class="form-control input-field-signup" aria-describedby="">
+              </div>
+            </div>
+
+            <div class="row g-3 my-3 label">
+              <div class="col-md-3">
+                <label for="inputPasswordSign" class="col-form-label fw-600 f-size4">Password</label>
+              </div>
+              <div class="col-md-9">
+                <input type="password" id="inputPasswordSign" class="form-control input-field-signup"
+                  aria-describedby="passwordHelpInline">
+              </div>
+            </div>
+
+            <div class="row g-3 my-3 label">
+              <div class="col-md-3">
+                <label for="inputConfirmPassword" class="col-form-label fw-600 f-size4">Confirm Password</label>
+              </div>
+              <div class="col-md-9">
+                <input type="password" id="inputConfirmPassword" class="form-control input-field-signup"
+                  aria-describedby="passwordHelpInline">
+              </div>
+            </div>
+
+            <div class="mt-4 pt-2 text-center">
+              <input class="btn btn-primary btn-lg btn-block bg1 rounded sign-up fw-600 f-size2 shadow" type="submit"
+                value="SIGN UP" />
+            </div>
+
+            <div class="mt-2 pt-2 text-center">
+              <a class="text-muted f-size4 fw-600" href="#!">FROGOT PASSWORD?</a>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-center py-4">
+              <p class="mb-0 me-2 f-size4 fw-600">Already has an Account?</p>
+              <button type="button" class="btn fw-600 btn-light sign-in rounded f-size2 shadow">Sign in</button>
+            </div>
+          </form>
+
+          <div class="signup-bottom-area">
+            <div class="row linenew">
+
+            </div>
+
+            <div class="social-option d-block pt-2">
+              <a class="btn btn-primary btn-lg btn-block d-block my-3 f-size2 border-dark bg-white text-success fw-600 button-google"
+                style="background-color: #3b5998" href="#!" role="button">CONTINUE WITH GOOGLE
+              </a>
+              <a class="btn btn-primary btn-lg btn-block d-block f-size2 border-dark bg-white text-primary fw-600 button-facebook"
+                style="background-color: #55acee" href="#!" role="button">CONTINUE WITH FACEBOOK
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="inc/js/script.js"></script>
+
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.querySelector(".signup-form");
+
+      form.addEventListener("submit", function (event) {
+        let isValid = true;
+
+        // Validate title selection
+        const title = document.getElementById("inputTitle");
+        if (title.value === "Select") {
+          isValid = false;
+          showError(title, "Please select a title.");
+        } else {
+          removeError(title);
+        }
+
+        // Validate first name
+        const firstName = document.getElementById("inputfirstName");
+        if (firstName.value.trim() === "") {
+          isValid = false;
+          showError(firstName, "First name is required.");
+        } else {
+          removeError(firstName);
+        }
+
+        // Validate last name
+        const lastName = document.getElementById("inputLastName");
+        if (lastName.value.trim() === "") {
+          isValid = false;
+          showError(lastName, "Last name is required.");
+        } else {
+          removeError(lastName);
+        }
+
+        // Validate email
+        const email = document.getElementById("inputEmail2");
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email.value.trim())) {
+          isValid = false;
+          showError(email, "Invalid email address.");
+        } else {
+          removeError(email);
+        }
+
+        // Validate mobile number
+        const mobileNo = document.getElementById("inputMobileNo");
+        const mobileRegex = /^\d{10}$/;
+        if (!mobileRegex.test(mobileNo.value.trim())) {
+          isValid = false;
+          showError(mobileNo, "Invalid mobile number.");
+        } else {
+          removeError(mobileNo);
+        }
+
+        // Validate password
+        const password = document.getElementById("inputPasswordSign");
+        const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/;
+        if (!passwordRegex.test(password.value.trim())) {
+          isValid = false;
+          showError(password, "Password must contain at least 6 characters, including one uppercase letter, one lowercase letter, one number, and one special character.");
+        } else {
+          removeError(password);
+        }
+
+        // Validate confirm password
+        const confirmPassword = document.getElementById("inputConfirmPassword");
+        if (confirmPassword.value.trim() !== password.value.trim()) {
+          isValid = false;
+          showError(confirmPassword, "Passwords do not match.");
+        } else {
+          removeError(confirmPassword);
+        }
+
+        if (!isValid) {
+          event.preventDefault(); // Prevent form submission if validation fails
+        }
+      });
+
+      // Function to show error message
+      function showError(input, message) {
+        const parentDiv = input.parentElement;
+        const errorDiv = parentDiv.querySelector(".error-message");
+        if (!errorDiv) {
+          const errorDiv = document.createElement("div");
+          errorDiv.className = "error-message text-danger fw-600 f-size4";
+          errorDiv.textContent = message;
+          parentDiv.appendChild(errorDiv);
+        }
+      }
+
+      // Function to remove error message
+      function removeError(input) {
+        const parentDiv = input.parentElement;
+        const errorDiv = parentDiv.querySelector(".error-message");
+        if (errorDiv) {
+          parentDiv.removeChild(errorDiv);
+        }
+      }
+    });
+  </script>
+</body>
+
+
+</html>

@@ -104,6 +104,10 @@ button:not(:disabled) {
   background-color: #ec1a1b;
 }
 
+.btn-clr2{
+  background-color: #fff;
+}
+
 .font1 {
   font-family: "JobClarendon", var(--font-fallback);
 }
@@ -654,6 +658,252 @@ a:hover.text-white.pe-lg-4.d-lg-block, a:hover.sign-in-btn.text-white.d-none.d-l
 img.logo.img-fluid {
   max-width: 130px;
 }
+
+/*Sign Up page start*/
+
+section.container.loginform {
+  min-height: 1000px;
+}
+
+i.far.fa-eye-slash.eye-icon {
+  position: absolute;
+  top: 11px;
+  right: 25px;
+  cursor: pointer;
+}
+
+form .field{
+  position: relative;
+}
+
+.loginform .line{
+  height: 1px;
+  position: relative;
+  background-color: #dddd;
+  margin: 36px 0;
+}
+
+.line::before{
+  content: 'Or';
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 15px;
+  background-color: #fff;
+  color: #232836;
+}
+
+.form .field{
+  border-radius: 6px;
+}
+
+.media-options a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px !important;
+}
+
+a.facebook {
+  color: #70b5df;
+  padding: 13px 20px;
+}
+
+a.facebook .facebook-icon {
+  height: 28px;
+  width: 28px;
+  background-color: #4872ff;
+  color: #ffffff;
+  font-size: 17px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.facebook-icon {
+  position: absolute;
+  left: 15px;
+}
+
+a.google-img{
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+}
+
+img.google-img{
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+}
+
+a.google {
+  border: 1px solid #CACACA;
+  color: #53d952;
+  padding: 13px 20px;
+}
+
+a.field.google img {
+  position: absolute;
+  left: 15px;
+}
+
+.loginform .card {
+  padding: 50px;
+  margin: 80px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+section.container.signupform {
+  min-height: 1000px;
+  max-width: 1200px;
+}
+
+section.container.loginform {
+  min-height: 1000px;
+  max-width: 1200px;
+}
+
+.signupform form {
+  margin: 50px 80px;
+}
+
+.loginform form {
+  margin: 40px 80px;
+}
+
+
+.form .field:focus {
+  outline: #ec1a1b !important;
+  border-color: #ec1a1b !important;
+  box-shadow: 0 0 0 0.1rem rgb(253 13 13 / 25%);
+}
+
+i#show_eye, i#hide_eye {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+i#hide_eyes, i#show_eyes {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+a.frogot-pass {
+  color: #000;
+  font-weight: 700;
+}
+
+.loginform a.field.google img {
+  position: absolute;
+  left: 110px;
+}
+
+.loginform .facebook-icon {
+  position: absolute;
+  left: 110px;
+}
+
+.field-login {
+  position: relative;
+}
+
+.error-icon {
+  position: absolute;
+  right: -12px;
+  top: 10px;
+}
+
+.error-txt{
+  margin-top: 5px;
+  color: #ec1a1b;
+  text-align: center;
+}
+
+.error{
+  display: none;
+}
+
+
+.signupform 
+a.field.google img {
+  position: absolute;
+  left: 95px;
+}
+
+.signupform  .facebook-icon {
+  position: absolute;
+  left: 95px;
+}
+
+.loginsubmit {
+  padding: 10px 30px;
+  border: none;
+}
+
+.loginform .form .field {
+  border-radius: 20px;
+  border: 2px solid #7e7c7cdd;
+}
+
+.signupform .form .field {
+  border-radius: 20px;
+}
+
+.loginsignup{
+  padding: 10px 30px;
+  border: none;
+}
+
+.loginsignup.btn-clr2.text2.fw-500.font1.l-hight2 {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+button:hover.loginsubmit {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  color: #333333;
+  background-color: #fff;
+}
+
+button:hover.btn.loginsignup {
+  background: #ec1a1b;
+  color: #fff;
+}
+
+.mediaall {
+  width: 540px;
+}
+
+a.field.google, a.field.facebook {
+  border: 1.5px dashed black;
+}
+
+.form.business-list form.text-center {
+  margin: 40px 120px;
+}
+
+/*BR Form*/
+.BusinessList .card {
+  max-width: 800px;
+}
+
+.BusinessList .card {
+  max-width: 800px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.image-upload-btn {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 6px !important;
+  border: 2px solid #0000 !important;
+}
+
 /* Custom css end */
 
 /* responssive css start */
@@ -797,6 +1047,19 @@ span.top-bar-right.d-flex {
 img.logo.img-fluid {
   max-width: 145px;
 }
+
+.loginform .card {
+  padding: 50px 0px;
+  margin: 40px 20px;
+}
+
+form.text-center {
+  margin: 40px 100px;
+}
+
+.mediaall {
+  width: 558px;
+}
 }
 
 
@@ -914,6 +1177,19 @@ img.hero-image {
 
 span.top-bar-right.d-flex {
   margin: 0px 0px !important;
+}
+
+.loginform .card {
+  padding: 50px 0px;
+  margin: 40px 20px;
+}
+
+form.text-center {
+  margin: 40px 85px;
+}
+
+.mediaall {
+  width: 558px;
 }
 }
 
@@ -1079,7 +1355,6 @@ span.top-bar-right.d-flex {
   margin-right: 0px;
 }
 
-
 .card-box {
   margin-top: 30px;
 }
@@ -1091,6 +1366,45 @@ img.logo.img-fluid {
 img.mobile-logo.img-fluid {
   max-width: 120px;
   padding: 5px 0px;
+}
+
+.loginform form {
+  margin: 20px 15px;
+}
+
+.loginform .card {
+  padding: 0px 0px;
+  margin: 30px 20px;
+}
+
+.loginsignup.btn-clr2.text2.fw-500.font1.l-hight2 {
+  margin-top: 20px;
+}
+
+.line::before {
+  right: 32%;
+}
+
+.mediaall {
+  width: 280px;
+}
+
+a.field.google span,
+a.field.facebook span {
+  font-size: 14px;
+}
+
+.loginform a.field.google img {
+  left: 15px;
+}
+
+.loginform .facebook-icon {
+  left: 15px;
+}
+
+/*BR Form*/
+form.text-center {
+  margin: 40px 10px;
 }
 
 }
@@ -1145,6 +1459,42 @@ span.top-bar-right.d-flex {
   margin-top: 30px;
 }
 
+.loginform form {
+  margin: 20px 15px;
+}
+
+.loginform .card {
+  padding: 0px 0px;
+  margin: 30px 20px;
+}
+
+.loginsignup.btn-clr2.text2.fw-500.font1.l-hight2 {
+  margin-top: 20px;
+}
+
+.line::before {
+  right: 32%;
+}
+.mediaall {
+  width: 280px;
+}
+
+a.field.google span {
+  font-size: 14px;
+}
+
+.loginform a.field.google img {
+  left: 20px;
+}
+
+.loginform .facebook-icon {
+  left: 20px;
+}
+
+/*BR Form*/
+form.text-center {
+  margin: 40px 10px;
+}
 
 }
 
@@ -1159,3 +1509,175 @@ span.top-bar-right.d-flex {
 }
 }
 /* responssive css end */
+
+
+.container.newitem-info {
+  overflow: hidden;
+  .slider {
+    animation: slidein 30s linear infinite;
+    white-space: nowrap;
+    .logos {
+      width: 100%;
+      display: inline-block;
+      margin: 0px 0;
+      .fab {
+        width: calc(100% / 5);
+        animation: fade-in 0.5s 
+          cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+      }
+    }
+  }
+}
+
+.container.rounded {
+  margin-top: 50px;
+}
+
+@keyframes slidein {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*login form section start*/
+.login-section .card{
+  max-width: 800px;
+}
+
+form.login-form {
+  margin: 60px 120px 20px 120px !important;
+}
+
+.login-section .social-option {
+  display: grid;
+}
+
+.row.linenew {
+  border: 1px solid black;
+}
+
+.row.linenew {
+  max-width: 650px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.social-option {
+  margin: 0px 120px;
+}
+
+.social-option .button-google, .social-option .button-facebook {
+  border-style: dashed;
+}
+
+.login-section .sign-in, .signup-section .sign-in {
+  padding: 12px 30px;
+  color: #000;
+}
+
+.login-section .sign-in:hover,
+.signup-section .sign-up:hover {
+  background-color: #e7e5e5;
+  color: #242424;
+}
+
+.login-section .sign-up,
+.signup-section .sign-up {
+  padding: 12px 30px;
+}
+
+.login-section .sign-up:hover,
+.signup-section .sign-in:hover{
+  background-color: #ec1a1b;
+  color: #ffff;
+}
+
+.login-section .input-field-login {
+  border-radius: 20px;
+}
+
+@media (max-width: 578px){
+  form.login-form {
+    margin: 0px 0px 0px 0px !important;
+  }
+  
+  .social-option {
+    margin: 0px 0px;
+  }
+}
+
+
+/*signup section*/
+.signup-section {
+  width: 800px;
+}
+
+form.signup-form{
+  margin: 40px 120px 20px 120px !important;
+}
+
+select#inputTitle {
+  border-radius: 15px;
+  border: none;
+}
+
+.signup-section input,
+.signup-section select {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+select#selectDagMat {
+  padding: 10px 15px;
+}
+
+select#selectDagMat, input#myTime{
+  padding: 7px 15px;
+  border: none;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 15px;
+}
+
+@media (max-width: 992px){
+  select#selectDagMat, input#myTime {
+    padding: 7px 8px;
+  }
+}
+
+@media (max-width: 768px){
+  select#selectDagMat, input#myTime {
+    padding: 7px 8px;
+  }
+}
+
+@media (max-width: 578px){
+  .form.business-list form.text-center {
+    margin: 40px 10px;
+  }
+
+  .business-list .checkPromote {
+    text-align: center !important;
+  }
+ 
+}
+
+
+
+
+
+
+
+
+
+
