@@ -1847,6 +1847,18 @@ form.search-area-listning {
   min-height: 687px;
 }
 
+.working-days {
+  display: flex;
+}
+
+.time-spend {
+  display: flex;
+}
+
+.matmenu {
+  width: 100%;
+}
+
 @media (max-width: 1200px){
   .listning-map-area iframe {
     min-height: 694px;
@@ -1901,6 +1913,19 @@ select#selectDagMat, input#myTime {
 .col-lg-3.input-space {
   margin-bottom: 10px;
 }
+
+.working-days {
+  display: block;
+}
+
+.time-spend {
+  display: block;
+}
+
+.day-time {
+  padding: 0px 0px !important;
+}
+
 }
 
 
@@ -1952,6 +1977,19 @@ select#selectDagMat, input#myTime {
 .col-lg-3.input-space {
   margin-bottom: 10px;
 }
+
+.working-days {
+  display: block;
+}
+
+.time-spend {
+  display: block;
+}
+
+.day-time {
+  padding: 0px 0px !important;
+}
+
 }
 
 @media (max-width: 576px){
