@@ -1565,7 +1565,8 @@ form.login-form {
 }
 
 .row.linenew {
-  border: 1px solid black;
+  border-bottom: 0.2px solid black;
+  opacity: 0.8;
 }
 
 .row.linenew {
@@ -1606,6 +1607,10 @@ form.login-form {
 
 .login-section .input-field-login {
   border-radius: 20px;
+}
+
+.row.linenew {
+  margin: 40px auto;
 }
 
 @media (max-width: 578px){
@@ -1693,6 +1698,8 @@ select#selectDagMat, input#myTime{
 .day-time {
   display: block !important;
 }
+
+
 }
 
 
@@ -1926,6 +1933,10 @@ select#selectDagMat, input#myTime {
   padding: 0px 0px !important;
 }
 
+.row.linenew {
+  margin: 40px auto;
+}
+
 }
 
 
@@ -1990,6 +2001,10 @@ select#selectDagMat, input#myTime {
   padding: 0px 0px !important;
 }
 
+.row.linenew {
+  margin: 40px auto;
+}
+
 }
 
 @media (max-width: 576px){
@@ -2003,6 +2018,10 @@ select#selectDagMat, input#myTime {
 
 .list-information {
   text-align: center;
+}
+
+.row.linenew {
+  margin: 40px 0px;
 }
 }
 
