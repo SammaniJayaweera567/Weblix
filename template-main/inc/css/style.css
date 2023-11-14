@@ -1669,12 +1669,304 @@ select#selectDagMat, input#myTime{
   .business-list .checkPromote {
     text-align: center !important;
   }
+
+  .row.working-time-days {
+    display: block !important;
+  }
+
+  .start-day, .end-day{
+    display: block !important;
+}
+
+.working-days {
+  display: block !important;
+}
  
+.time-spend.d-flex {
+  display: block !important;
+}
+
+.time-spend span {
+  display: block !important;
+}
+
+.day-time {
+  display: block !important;
+}
 }
 
 
+/*page review*/
+.banner-area {
+  background-image: url(inc/images/bannerimage1.jpg);
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.star-rating {
+  line-height:32px;
+  font-size:1.25em;
+}
+
+.star-rating .fa-star {
+  color: orange;
+  font-size: 15px;
+}
+
+.star-rating {
+  align-items: center;
+}
+
+.comment-section i.fa-solid.fa-paper-plane {
+  font-weight: 900;
+  line-height: 1.5 !important;
+  padding: 0px 40px;
+}
+
+.comment-section .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  margin-left: -3px;
+}
+
+.comment-section .send-area {
+  width: 75%;
+  margin-bottom: 30px !important;
+}
+
+.comment-section .card-body{
+  border: 1px solid #000 !important;
+}
+
+.selectstartday, .selectendday {
+  padding: 7px 50px !important;
+}
+
+.googlemap-section iframe {
+  width: 100% !important;
+  height: 1015px !important;
+}
 
 
+/*Listning Page*/
+button.visit {
+  border-radius: 13px;
+  padding: 5px 10px;
+  color: #797878cc;
+  border: 1px solid black;
+  background: #ffff;
+}
+
+p.company-name {
+  font-weight: 700;
+}
+
+.star-rating.d-flex.align-center.align-middle.mt-3 {
+  text-align: center !important;
+  margin: 0 auto;
+  align-items: center !important;
+}
+
+.list-star-review.business-list-star {
+  display: grid !important;
+}
+
+.review {
+  text-align: center;
+  margin: 0 auto;
+}
+
+span.star-space.fa-star {
+  padding-right: 10px;
+}
+
+.card-body.business-listning-searching {
+  border: none !important;
+}
+
+.page-listning .card {
+  border: none;
+}
+
+.input-box{
+  position: relative;
+  height: 40px;
+  width: 100%;
+  background-color: #ffff;
+  border-radius: 10px;
+}
+
+.input-box input{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 0 40px;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #8f8f8f;
+}
+
+.input-box .searching{
+  position: absolute;
+  height: 100%;
+  width: 60px;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button.search-button-form {
+  padding: 7px 20px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.input-space {
+  padding-left: 0px;
+}
+
+form.search-area-listning {
+  padding: 15px;
+  border: 1px solid black;
+}
+
+.listning-map-area{
+  width: 100%;
+  height: 500px;
+}
+
+.listning-map-area iframe {
+  width: 100%;
+  height: auto;
+  min-height: 687px;
+}
+
+@media (max-width: 1200px){
+  .listning-map-area iframe {
+    min-height: 694px;
+}
+}
+
+@media (max-width: 992px){
+  .page-review-rightside .time-spend.d-flex {
+    display: block !important;
+  }
+  
+  .page-review-rightside .time-spend span {
+    display: block !important;
+  }
+  
+  .page-review-rightside .day-time {
+    display: block !important;
+  }
+
+  .page-review-rightside .working-days {
+    display: block !important;
+}
+
+.page-review-rightside .matmenu,
+.page-review-rightside .day-time {
+  padding: 10px 0px;
+}
+
+select#selectDagMat, input#myTime {
+  padding: 7px 8px;
+  padding: 10px 123px !important;
+  width: 100% !important;
+}
+
+.container-fluid.section-body-area.p-5 {
+  padding: 20px !important;
+}
+
+.googlemap-section iframe {
+  height: 1180px !important;
+}
+
+.listning-map-area iframe {
+  min-height: 908px;
+}
+
+.col-lg-4.input-space-one {
+  padding-left: 0px;
+  margin-bottom: 10px;
+}
+
+.col-lg-3.input-space {
+  margin-bottom: 10px;
+}
+}
+
+
+@media (max-width: 768px){
+  .page-review-rightside .time-spend.d-flex {
+    display: block !important;
+  }
+  
+  .page-review-rightside .time-spend span {
+    display: block !important;
+  }
+  
+  .page-review-rightside .day-time {
+    display: block !important;
+  }
+
+  .page-review-rightside .working-days {
+    display: block !important;
+}
+
+.page-review-rightside .matmenu,
+.page-review-rightside .day-time {
+  padding: 10px 0px;
+}
+
+select#selectDagMat, input#myTime {
+  padding: 7px 8px;
+  padding: 10px 115px !important;
+  width: 100% !important;
+}
+
+.container-fluid.section-body-area.p-5 {
+  padding: 20px !important;
+}
+
+.googlemap-section iframe {
+  height: 1180px !important;
+}
+
+.listning-map-area iframe {
+  min-height: 983px;
+}
+
+.col-lg-4.input-space-one {
+  padding-left: 0px;
+  margin-bottom: 10px;
+}
+
+.col-lg-3.input-space {
+  margin-bottom: 10px;
+}
+}
+
+@media (max-width: 576px){
+  .page-right {
+    padding: 0 !important;
+  }
+
+  .page-review-rightside {
+    padding: 10px 25px;
+}
+
+.list-information {
+  text-align: center;
+}
+}
 
 
 
